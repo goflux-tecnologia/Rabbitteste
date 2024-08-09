@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+    ViewData["Controller"] = "Home";
+}
+
+
+
+
+<main class="flex-1 relative overflow-y-auto focus:outline-none">
+    <div class="py-6">
+        <div class="max-w-full mx-auto px-4 sm:px-6 md:px-8">
+            <!-- Replace with your content -->
+            <div class="py-4">
+                <div class="border-4 border-dashed border-gray-200 rounded-lg ">
+
+
+                    <!-- This example requires Tailwind CSS v2.0+ -->
+                    <div class="py-12 bg-white">
+                        <div class=" mx-auto px-4 sm:px-6 lg:px-8">
+                            <div class="lg:text-center">
+                                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Análise</h2>
+                                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                                    Comportamento de Processamento Assíncrono
+                                </p>
+                                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                                    Aqui coordenamos cargas de trabalho e consumo de forma interativa.
+                                </p>
+                            </div>
+
+                            <div class="mt-10">
+                                <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                                    <div class="relative">
+                                        <partial name="_Publishers" />
+                                    </div>
+
+
+                                    <div class="relative">
+
+                                        <partial name="_Consumers" />
+                                    </div>
+
+
+
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            <!-- /End replace -->
+        </div>
+    </div>
+</main>
